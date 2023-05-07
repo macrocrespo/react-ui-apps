@@ -1,6 +1,5 @@
-import './app.css';
-import { CatFact } from './components/CatFact';
-import { useCatFacts } from './hooks/useCatFacts';
+import { CatFact } from './components';
+import { useCatFacts } from './hooks';
 
 function App() {
   const { fact, handleNewCatFact, handleResetFact } = useCatFacts();
