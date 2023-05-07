@@ -1,6 +1,6 @@
 # React UI Apps
 
-This repository contains a series of applications to practice the different ways of creating the user interface (UI).
+This repository contains a serie of applications to practice the different ways of creating the user interface (UI).
 
 ![App Screenshot](https://raw.githubusercontent.com/macrocrespo/react-ui-apps/main/screenshot.jpg)
 

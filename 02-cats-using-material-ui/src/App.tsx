@@ -13,17 +13,17 @@ function App() {
     <Grid container>
       <Grid item sx={{ p: 3 }} sm={6}>
         <Card sx={{ p: 3 }} variant="outlined">
-          <Typography variant="h4">Application to see cat facts!</Typography>
+          <Typography variant="h4">Application to see cats facts!</Typography>
           <hr />
           <Button
             sx={{ mt: 1, mr: 2 }}
-            variant="contained"
+            variant="outlined"
             onClick={handleNewCatFact}>
             Get a cat fact
           </Button>
           <Button
             sx={{ mt: 1 }}
-            variant="contained"
+            variant="outlined"
             onClick={handleReset}
             color="error">
             Reset

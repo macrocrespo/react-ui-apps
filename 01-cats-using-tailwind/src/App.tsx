@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="app grid gap-4 p-6 sm:grid-cols-1 md:grid-cols-2 mt-5 ">
       <div className="container">
-        <h1 className="text-4xl pb-4">Application to see cat facts!</h1>
+        <h1 className="text-4xl pb-4">Application to see cats facts!</h1>
         <hr />
         <button className="button-blue mt-5 mr-2" onClick={handleNewCatFact}>
           Get a cat fact
