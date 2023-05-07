@@ -2,7 +2,7 @@
 
 This repository contains a series of applications to practice the different ways of creating the user interface (UI).
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://raw.githubusercontent.com/macrocrespo/react-ui-apps/main/screenshot.jpg)
 
 ### The different UI Frameworks / libraries used are:
 
@@ -37,7 +37,7 @@ To run any of the apps, you could download or clone the repo and then, install d
 
 ### Author
 
-- [@macrocrespo](https://www.github.com/macrocrespo)
+- Mario Crespo | [mariocrespo.com.ar](https://mariocrespo.com.ar)
 
 ### License
 
