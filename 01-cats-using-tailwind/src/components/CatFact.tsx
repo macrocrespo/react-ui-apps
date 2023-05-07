@@ -8,8 +8,10 @@ export const CatFact = ({ fact }: Props) => {
   const [catImage, setCatImage] = useState('');
 
   useEffect(() => {
-    const words = fact.split(' ');
-    setCatImage(`${words[0]} ${words[1]} ${words[2]}`);
+    if (fact.length > 0) {
+      const words = fact.split(' ');
+      setCatImage(`${words[0]} ${words[1]} ${words[2]}`);
+    }
   }, [fact]);
 
   return (
