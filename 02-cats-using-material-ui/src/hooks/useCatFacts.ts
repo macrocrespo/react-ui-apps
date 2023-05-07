@@ -12,5 +12,9 @@ export const useCatFacts = () => {
     });
   };
 
-  return { fact, loadingFact, handleNewCatFact };
+  const handleReset = () => {
+    setFact('');
+  };
+
+  return { fact, loadingFact, handleNewCatFact, handleReset };
 };

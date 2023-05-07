@@ -7,7 +7,7 @@ import '@fontsource/roboto/700.css';
 import { Button, Card, Grid, Typography } from '@mui/material';
 
 function App() {
-  const { fact, loadingFact, handleNewCatFact } = useCatFacts();
+  const { fact, loadingFact, handleNewCatFact, handleReset } = useCatFacts();
 
   return (
     <Grid container>
@@ -15,8 +15,18 @@ function App() {
         <Card sx={{ p: 3 }} variant="outlined">
           <Typography variant="h4">Application to see cat facts!</Typography>
           <hr />
-          <Button sx={{ mt: 1 }} variant="contained" onClick={handleNewCatFact}>
+          <Button
+            sx={{ mt: 1, mr: 2 }}
+            variant="contained"
+            onClick={handleNewCatFact}>
             Get a cat fact
+          </Button>
+          <Button
+            sx={{ mt: 1 }}
+            variant="contained"
+            onClick={handleReset}
+            color="error">
+            Reset
           </Button>
         </Card>
       </Grid>
