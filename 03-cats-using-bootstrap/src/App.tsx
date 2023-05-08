@@ -14,11 +14,11 @@ function App() {
             <hr />
             <Button
               style={{ marginRight: 10 }}
-              variant="primary"
+              variant="outline-primary"
               onClick={handleNewCatFact}>
               Get a cat fact
             </Button>
-            <Button variant="danger" onClick={handleReset}>
+            <Button variant="outline-danger" onClick={handleReset}>
               Reset
             </Button>
           </Alert>

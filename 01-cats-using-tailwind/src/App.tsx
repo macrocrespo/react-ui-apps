@@ -9,10 +9,10 @@ function App() {
       <div className="container">
         <h1 className="text-4xl pb-4">Application to see cats facts!</h1>
         <hr />
-        <button className="button-blue mt-5 mr-2" onClick={handleNewCatFact}>
+        <button className="btn btn-blue mt-5 mr-2" onClick={handleNewCatFact}>
           Get a cat fact
         </button>
-        <button className="button-red mt-5" onClick={handleResetFact}>
+        <button className="btn btn-red mt-5" onClick={handleResetFact}>
           Reset
         </button>
       </div>
