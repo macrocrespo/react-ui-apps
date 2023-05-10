@@ -1,1 +1,1 @@
-export * from './useCatFacts';
+export * from './useCatFacts'

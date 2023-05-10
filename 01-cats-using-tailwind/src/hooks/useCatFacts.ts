@@ -1,16 +1,18 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
-export const useCatFacts = () => {
-  const [fact, setFact] = useState('');
-  const handleNewCatFact = () => {
-    fetch('https://catfact.ninja/fact')
-      .then((response) => response.json())
-      .then((data) => setFact(data.fact));
-  };
+export const useCatFacts = (): [string, () => void, () => void] => {
+  const [fact, setFact] = useState('')
+  const handleNewCatFact = async (): Promise<void> => {
+    await fetch('https://catfact.ninja/fact')
+      .then(async (response) => await response.json())
+      .then((data) => {
+        setFact(data.fact)
+      })
+  }
 
-  const handleResetFact = () => {
-    setFact('');
-  };
+  const handleResetFact = (): void => {
+    setFact('')
+  }
 
-  return { fact, handleNewCatFact, handleResetFact };
-};
+  return [fact, handleNewCatFact, handleResetFact]
+}

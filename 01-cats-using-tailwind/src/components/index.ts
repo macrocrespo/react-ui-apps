@@ -1,1 +1,1 @@
-export * from './CatFact';
+export * from './CatFact'

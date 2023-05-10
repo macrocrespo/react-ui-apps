@@ -12,6 +12,8 @@
   },
   "plugins": ["react"],
   "rules": {
+    "react/react-in-jsx-scope": "off",
+    "multiline-ternary": "off",
     "react/jsx-filename-extension": [
       1,
       { "extensions": [".js", ".jsx", ".ts", ".tsx"] }

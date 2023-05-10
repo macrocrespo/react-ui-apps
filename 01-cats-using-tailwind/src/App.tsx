@@ -1,8 +1,8 @@
-import { CatFact } from './components';
-import { useCatFacts } from './hooks';
+import { CatFact } from './components'
+import { useCatFacts } from './hooks'
 
-function App() {
-  const { fact, handleNewCatFact, handleResetFact } = useCatFacts();
+const App: React.FC = () => {
+  const [fact, handleNewCatFact, handleResetFact] = useCatFacts()
 
   return (
     <div className="app grid gap-4 p-6 sm:grid-cols-1 md:grid-cols-2 mt-5 ">
@@ -20,7 +20,7 @@ function App() {
         <CatFact fact={fact} />
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
